@@ -34,7 +34,7 @@ class DeviseCreateEndUsers < ActiveRecord::Migration[6.1]
 
       t.string :name, null: false
       t.text :introduction
-      t.date :birth_date,　null: false
+      t.date :birth_date
 
       t.timestamps null: false
     end
