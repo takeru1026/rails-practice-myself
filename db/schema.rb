@@ -28,9 +28,9 @@ ActiveRecord::Schema.define(version: 2021_12_10_154816) do
   end
 
   create_table "ideas", charset: "utf8mb4", force: :cascade do |t|
-    t.string "title", null: false
     t.text "opinion", null: false
     t.string "idea_image"
+    t.integer "end_user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

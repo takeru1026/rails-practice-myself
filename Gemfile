@@ -32,9 +32,6 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
 gem 'devise-i18n'
 
-# スクレイピング機能
-gem 'mechanize'
-
 # METAタグ
 gem 'meta-tags'
 

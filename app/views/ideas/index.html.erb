@@ -1,0 +1,42 @@
+<% content_for :css do %>
+  <%= stylesheet_pack_tag 'idea_index', media: "all" %>
+<% end %>
+<button type="button" onclick="clickButton()" class="make-idea-botton">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+  </svg>
+</button>
+
+<%# 投稿機能 %>
+<div id="dialogBack"></div>
+<div id="dialog">
+  <div id="dialogPostIdea" class="dialog-post-idea">
+    <input type="button" value="キャンセル" class="dialog-cansel-button" id="closeDialog" onclick="closeDialog()"/>
+    <%=  form_with model: @idea, local: true do |f| %>
+      <%= f.button '投稿する', type:'button', onclick:'submit();', class:"new-submit" %>
+      <%= f.text_area :opinion, class:"new-field", placeholder:"いまどうしてる？"%>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  // -------------------------------------------
+  // ＋ボタン押したときの投稿画面を見える様にする
+  // -------------------------------------------
+  function clickButton() {
+    const dialogBack=document.getElementById('dialogBack');
+    const dialog=document.getElementById('dialog');
+    document.getElementById('dialogBack').style.visibility = 'visible'
+    document.getElementById('dialog').style.visibility = 'visible'
+    dialogBack.classList.toggle('visible')
+    dialog.classList.toggle('visible')
+  };
+
+  function closeDialog() {
+    const dialogBack=document.getElementById('dialogBack');
+    const dialog=document.getElementById('dialog');
+    dialogBack.classList.toggle('visible')
+    dialog.classList.toggle('visible')
+    location.reload()
+  };
+</script>
