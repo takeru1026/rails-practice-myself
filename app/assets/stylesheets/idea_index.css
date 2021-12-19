@@ -10,6 +10,7 @@
   border-radius: 100%;
   cursor: pointer;
 }
+/* 投稿機能の背景 */
 #dialogBack {
   visibility: hidden;
   background-color: grey	;
@@ -24,7 +25,6 @@
 #dialogBack .visible {
   visibility: visible;
 }
-
 #dialog {
   visibility: hidden;
   position: absolute;
@@ -61,7 +61,6 @@
 textarea:focus  {
   outline: none;
 }
-
 .dialog-cansel-button {
   width: 10%;
   background-color: #2C7CFF;
