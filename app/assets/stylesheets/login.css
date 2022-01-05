@@ -1,0 +1,67 @@
+.sign-up {
+  margin: 7% auto;
+}
+.sign-up-box {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  border: solid 1px black;
+}
+.sign-up-header {
+  width: 100%;
+  background-color: black;
+  padding: 5% 0%;
+}
+.sign-up-header h2{
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0;
+  color: rgb(201, 185, 185);
+  font-family: system-ui;
+}
+.sign-up-form .field, .actions{
+  padding: 5% 0;
+}
+.sign-up-form .field input {
+  width: 50%;
+  border: none;
+  border-bottom: solid 1px black;
+  color: black;
+  font-size: 1.2rem;
+  font-family: system-ui;
+  font-weight: 100;
+}
+.sign-up-form .field input:focus {
+  outline: none;
+  border-bottom: solid rgb(38, 75, 112) 2px;
+}
+.sign-up-form .field select {
+  text-align: center;
+  margin: 0 3%;
+  border: none;
+  border-bottom: solid rgb(38, 75, 112) 1px;
+  color: black;
+  font-size: 1.3rem;
+  font-family: system-ui;
+  font-weight: 100;
+}
+.sign-up-form .field select:focus {
+  outline: none;
+  border-bottom: solid rgb(38, 75, 112) 2px;
+}
+
+.sign-up-form .actions input {
+  padding: 3% 8%;
+  font-size: 1.2rem;
+  font-family: system-ui;
+  font-weight: 100;
+}
+.link-login {
+  width: 50%;
+  margin: 5% auto 0;
+  text-align: center;
+}
+.link-login a{
+  text-decoration: none;
+}
+

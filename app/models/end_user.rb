@@ -6,7 +6,7 @@
 #  birth_date             :date
 #  email                  :string(255)      default(""), not null
 #  encrypted_password     :string(255)      default(""), not null
-#  introduction           :text(65535)      not null
+#  introduction           :text(65535)
 #  name                   :string(255)      not null
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
@@ -24,5 +24,7 @@ class EndUser < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  validates :name, presence: true, uniqueness: true
+  validates :email, presence: true
   has_many :ideas
 end

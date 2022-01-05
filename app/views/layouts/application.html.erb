@@ -19,8 +19,8 @@
           <!-- *_path はUserモデルを作成したときに、
           deviseにより自動で作成されてますので、rake routesで確認できます -->
           Logged in as <strong><%= current_end_user.email %></strong>.
-          <%= link_to 'プロフィール変更', edit_user_registration_path %> |
-          <%= link_to "ログアウト", sign_out_path %>
+          <%= link_to 'プロフィール変更', edit_end_user_registration_path %> |
+          <%= link_to "ログアウト", destroy_end_user_session_path %>
         <% else %>
           <%= link_to "サインイン", new_end_user_registration_path %> |
           <%= link_to "ログイン", new_end_user_session_path %>
