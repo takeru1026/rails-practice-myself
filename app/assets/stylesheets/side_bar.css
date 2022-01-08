@@ -1,5 +1,5 @@
 .side-bar {
-  margin-top: 3%;
+  margin-top: 2%;
   display: flex;
   width: 20%;
 }
@@ -17,7 +17,7 @@
   margin-top: 10%;
   display: flex;
 }
-.side-bar .side-menue .home, .fire, .bell, .mail, .profile, .lists {
+.side-bar .side-menue .home, .fire, .bell, .mail, .profile, .lists, .logout {
   width: 55%;
 }
 .picture-menue {
